@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+	padding: 0px;
+    margin:0;
+    background-image: url(background2.jpg);
+    background-size: cover;
+
+}
+/*container*/
+.container{
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+}
+
+header nav{
+  float: right;
+  margin-top:35px;
+
+} 
+nav ul li{
+   display: inline-block;
+  list-style: none;
+  position: relative;
+}
+header a{
+  color:rgb(201, 198, 198);
+ text-decoration: none;
+ text-transform: none;
+ font-size: 16px;
+ padding:5px 20px;
+ border: 1px solid #ff7675;
+ transition:1s all ease;
+ cursor: pointer;
+ }
+
+header a::before{
+  width:100;
+  }
+
+header .current a{
+  background-color:rgb(201, 198, 198) ;
+  color:rgb(75, 74, 74);
+  font-weight: bold;
+}
+
+header a:hover{
+  background-color:rgb(201, 198, 198);
+  color:rgb(75, 74, 74);
+  font-weight: bold;
+}
+#portfolio-item{
+  width:800px;
+  margin:5px 0 0 30px;
+  float:right;
+  padding: 0 0 0 100px;
+}
+
+
+
+

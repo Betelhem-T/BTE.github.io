@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+	padding: 0px;
+    margin:0;
+    background-image: url(background2.jpg);
+    background-size: cover;
+
+}
+/*container*/
+.container{
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+}
+
+header nav{
+  float: right;
+  margin-top:70px;
+
+} 
+nav ul li{
+   display: inline-block;
+  list-style: none;
+  position: relative;
+}
+header a{
+  color:rgb(201, 198, 198);
+ text-decoration: none;
+ text-transform: none;
+ font-size: 16px;
+ padding:5px 20px;
+ border: 1px solid #ff7675;
+ transition:1s all ease;
+ cursor: pointer;
+ }
+
+header a::before{
+  width:100;
+  }
+
+header .current a{
+  background-color:rgb(201, 198, 198) ;
+  color:rgb(75, 74, 74);
+  font-weight: bold;
+}
+
+header a:hover{
+  background-color:rgb(201, 198, 198);
+  color:rgb(75, 74, 74);
+  font-weight: bold;
+}
+
+
+  .wrapper {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 300px;
+    height: 500px;
+    perspective: 900px;
+  }
+  
+  .container {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    transition: .5s all ease;
+    transform: rotateX(60deg) scale(0.7);
+    perspective: 900px;
+    box-shadow: 0px 20px 50px #555;
+    animation: entry 1s linear 1;
+  }
+  
+  #c0 {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 110%;
+    background: linear-gradient(to bottom, #323233 30%,#323233 30%);
+    z-index: 300;
+    box-shadow: 0px 20px 100px #555;
+  }
+  
+  #c1 {
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(to bottom, #323233 30%, #8d8d8d 100%);
+    box-shadow: 0px 20px 100px #555;
+    left: 100%;
+    z-index: 0;
+  }
+  
+  #c2 {
+    left: -100%;
+    width: 100%;
+    height: 122%;
+    z-index: 0;
+    background: linear-gradient(to bottom, #323233 30%, #8d8d8d 100%);
+    box-shadow: 0px 20px 100px #555;
+  }
+  
+  .container:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
+  }
+  
+  
+  .story {
+    position: absolute;
+    top: -5.5%;
+    left: 0%;
+    height: 55%;
+    width: 100%;
+    z-index: 30;
+  }
+  
+  
+  
+  .info {
+    position: absolute;
+    top: 10%;
+  }
+  
+  h3 {
+    text-align: center;
+    text-shadow: 0px 0px 5px #eee;
+    color: #eee;
+    letter-spacing: 2px;
+  }
+  
+  h2 {
+    text-align: center;
+    text-shadow: 0px 0px 10px #eee;
+    color: #eee;
+    letter-spacing: 2px;
+  }
+  
+  h5 {
+    text-align: center;
+    text-shadow: 0px 0px 10px #eee;
+    color: #eee;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+ padding-top: 2%;
+    left: 30%;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px #eee;
+  }
+  
+  p {
+    font-size: 10px;
+    color:#fff;
+    padding: 0px 20px 2px 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  h4 {
+    color:rgb(39, 38, 38);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    letter-spacing: 2px;
+  }
+  
+  .page {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    left: 0%;
+    height: 20%;
+    z-index: 30;
+  }
+  
+  li {
+    position: absolute;
+    top: 50%;
+    list-style: none;
+    color: #111;
+  }
+  
+  li:nth-child(1) {
+    left: 15%;
+    animation: simple1 1s linear infinite;
+  }
+  
+  li:nth-child(2) {
+    right: 15%;
+    animation: simple 1s linear infinite;
+  }
+  
+  @keyframes simple {
+    50% {
+      transform: translateX(10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes simple1 {
+    50% {
+      transform: translateX(-10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes entry {
+    0% {
+      top: -20%;
+      opacity: 0.1;
+    }
+    100% {
+      top: 0%;
+    }
+  }
+  #footer {
+     padding: 515px 60px 0 0;
+    overflow: hidden; margin: 0 0 0 0;
+    }
+
+    #footer a{
+      text-decoration: none;
+      text-transform: uppercase;
+   }
+   #footer p#back-top {
+       font-size: 20px; float: right; margin: 0 30px 0px 0;
+       }
+   
+   #footer a {
+       color: rgb(201, 198, 198); text-decoration: none;
+       border: 1px solid #ff7675
+       }
+       #footer a:hover {
+        background-color:rgb(201, 198, 198);
+        color:rgb(75, 74, 74);
+        font-weight: bold;
+        transition:1s all ease;
+      }
